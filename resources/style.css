@@ -39,12 +39,17 @@ nav ul li+li {
 
 }
 
+nav ul li:hover {
+    color: #7fd4bd;
+    cursor: pointer;
+}
+
 .mainbanner {
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 2rem;
+    flex-direction: column;
 }
 
 h1 {
@@ -55,6 +60,152 @@ h1 {
     color: #ffffff;
 }
 
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
 h1 span {
     color: #7fd4bd;
+}
+
+.mainbanner button {
+    background-color: #09af96;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.aboutme {
+    max-width: 1200px;
+    background-color:#7fd4bd;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.img-aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-aboutme img{
+    width:80%;
+    height: auto;
+}
+
+.text-aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-aboutme ul {
+    padding: 0;
+}
+.text-aboutme ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.text-aboutme ul li span {
+    font-weight: bolder;
+}
+
+.skills {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.skills h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skills-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.icon img {
+    max-width: 80px;
+
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.description h3,
+.description p {
+    margin: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 1rem;
+    background-color: #083c34;
+}
+
+.progress {
+    height: 1rem;
+    background-color: #7fd4bd;
+}
+
+.html .progress {
+    width: 90%;
+}
+
+.css .progress {
+    width: 80%;
+}
+
+.js .progress {
+    width: 50%;
+}
+
+.rwd .progress {
+    width: 80%;
+}
+
+.git .progress {
+    width: 50%;
+}
+
+.pm .progress {
+    width: 70%;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
 }
