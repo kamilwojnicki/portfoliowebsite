@@ -18,11 +18,19 @@ header {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #161616;
 }
 
 img.logo {
     width: auto;
     height: 100%;
+}
+
+.logo-link {
+    height: 100%;
+    width: auto;
 }
 
 nav ul li {
@@ -39,7 +47,17 @@ nav ul li+li {
 
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 nav ul li:hover {
+    color: #7fd4bd;
+    cursor: pointer;
+}
+
+nav ul li:hover a {
     color: #7fd4bd;
     cursor: pointer;
 }
@@ -208,4 +226,19 @@ footer {
 footer p {
     text-align: center;
     margin: 0;
+}
+
+/*  contact page */
+
+#contact .mainbanner ul {
+    padding: 0;
+}
+
+#contact .mainbanner ul li {
+    list-style: none;
+    color: #ffffff;
+}
+
+body#contact .mainbanner{
+    min-height: calc(100vh - 60px);
 }

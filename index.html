@@ -5,17 +5,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Impact:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/style.css">
-    <script src="./resources/script.js"></script>
+    <script src="./resources/script.js" async></script>
   </head>
  
   <body> 
     <header>
-        <img src="./resources/images/logoKW.svg" class="logo">
+        <a href="./index.html" class="logo-link"><img src="./resources/images/logoKW.svg" class="logo"></a>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li id="aboutme-link">About Me</li>
+                <li id="skills-link">Skills</li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +24,7 @@
             <h1>Hi there! I'm Kamil.<br>I'm a <span>software developer</span><br>and this is my portfolio page.</h1>
             <button>Find out more about me</button>
         </section>
-        <section class="aboutme">
+        <section class="aboutme" id="aboutme">
             <div class="img-aboutme">
                 <img src="./resources/images/foto.jpg">
             </div>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>My skills</h2>
             <div class="skills-box">
                 <div class="box icon html">
