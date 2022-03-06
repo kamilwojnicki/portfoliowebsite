@@ -4,17 +4,37 @@ let skillsLink = document.getElementById('skills-link');
 let skills = document.getElementById("skills");
 let ctaButton = document.getElementById("cta-main");
 
-aboutMeLink.addEventListener('click', function() {
-    aboutMe.scrollIntoView({behavior: "smooth"});
-});
 
-skillsLink.addEventListener('click', function() {
-    skills.scrollIntoView({behavior: "smooth"});
-});
 
-ctaButton.addEventListener('click',  function() {
-    aboutMe.scrollIntoView({behavior: "smooth"});
-});
+function scrollToTargetAdjusted(element){
+    const headerOffset = 105;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+    console.log(elementPosition);
+    window.scrollTo({
+         top: offsetPosition,
+         behavior: "smooth"
+    });
+};
+
+const scrollToAboutMe = function() {
+    const element = aboutMe;
+    scrollToTargetAdjusted(element);
+}
+
+const scrollToSkills = function() {
+    const element = skills;
+    scrollToTargetAdjusted(element);
+}
+
+
+
+aboutMeLink.addEventListener('click', scrollToAboutMe);
+
+skillsLink.addEventListener('click', scrollToSkills);
+
+ctaButton.addEventListener('click', scrollToAboutMe);
 
 let progressHTML = document.querySelector('.html .progress');
 let htmlTarget = document.querySelector('.html img');
